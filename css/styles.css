@@ -1,157 +1,171 @@
 /* Globais */
 h1, h2, h3, h4, h5, h6 {
- font-family: 'Montserrat-Bold', sans-serif;
+  font-family: 'Montserrat-Bold', sans-serif;
 }
-p{
+
+p {
   font-family: 'Roboto', sans-serif;
 }
 
- /* Nav Bar */
-.navbar-brand{
+/* Nav Bar */
+.navbar-brand {
   font-family: 'Ubuntu', sans-serif;
 }
 
 /*  Imagem de Fundo do inicio */
- .background_img{
-   background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url("../images/Cover/bar5_1.jpg");
+.background_img {
+  background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url("../images/Cover/bar5_1.jpg");
   background-color: #393e46;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-    height: 1000px;
+  height: 1000px;
 }
 
 /* @ Rules */
+/*mobile */
+@media (max-width: 767px) {
+  .img_div {
+    width: 70%;
+  }
 
-@keyframes h2_move {
-  50% {color: #777777;}
+  .p_second_section {
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .features_column{
+padding: 0 !important;
+  }
 }
-/* Titulo no Inicio */
+/*laptop*/
+@media (min-width: 1024px) {
+  .h2_features {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+/*subtitulo que muda de cor */
+@keyframes h2_move {
+  50% {
+    color: #777777;
+  }
+}
 
-.h1_title{
-   color: white;
+/* Titulo no Inicio */
+.h1_title {
+  color: white;
   font-size: 65px;
   font-family: 'Montserrat-Extra-Bold', sans-serif;
   padding-top: 260px;
   font-weight: bold;
   text-align: center;
-   /* animation: h1_move 5s infinite; */
-   word-spacing: 10px;
-   letter-spacing: 5px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
 }
-.h2_title{
-  font-weight: bold;
-   color: white;
-  text-align: center;
- animation: h2_move 5s infinite;
-  letter-spacing: 2px;
 
+.h2_title {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  animation: h2_move 5s infinite;
+  letter-spacing: 2px;
 }
+
 /* Subtitulo */
-.h2_subtitle{
+.h2_subtitle {
   color: white;
   font-size: 60px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   padding-top: 100px;
- text-align: center;
+  text-align: center;
 }
 
 /* Segunda Secção */
-#about{
-  background-image: linear-gradient(180deg, black , #707171 );
-
+#about {
+  background-image: linear-gradient(180deg, black, #707171);
 }
-.h2_second_section{
+
+.h2_second_section {
   padding-top: 140px;
   color: white;
   text-align: center;
   font-size: 35px;
 }
 
-.p_second_section{
+.p_second_section {
   padding-bottom: 200px;
   text-align: center;
   color: white;
   font-size: 19px;
 }
+
 /* Features */
 .div_features {
- /* background-image: linear-gradient(#777777, white); */
   background-color: white;
-   padding: 115px 1px 115px 1px;
+  padding: 115px 1px 115px 1px;
 }
-.h2_features{
-   text-align: center;
+
+.h2_features {
+  text-align: center;
   font-weight: bold;
 }
- .features_container{
+
+.features_container {
   padding-left: 90px;
 }
 
 .feature-box {
-  padding: 4.5% ;
+  padding: 4.5%;
 }
+
 .feature-title {
   color: black;
   font-size: 1.5rem;
   font-family: "Montserrat-Bold";
- }
-
-.p_img{
-color: #717171;
-}
-   /* Imagens que mudam */
-.img_hover {
-   background-image: url('../images/Qualidades/drink_colorless.png');
-   background-size: cover;
-   height: 90px;
-   width: 90px;
-   margin-left: 60px;
 }
 
-.img_hover:hover {
-   background-image: url('../images/Qualidades/drink_colorfull.png');
-   background-size: cover;
-   height: 90px;
-   width: 90px;
+.p_img {
+  color: #717171;
 }
 
-.img_hover_2 {
-   background-image: url('../images/Qualidades/drink2_colorless.png');
-   background-size: cover;
-   height: 90px;
-   width: 90px;
-   margin-left: 80px;
+/* Imagens que mudam ao rolar
+Embora suas propriedades serão modificas no index.js, aqui deixei algumas
+salvas para caso o navegador não habilite o javascript
+   */
+.img_feature_1 {
+  background-image: url('../images/Qualidades/drink_colorfull.png');
+  background-size: cover;
+  height: 90px;
+  width: 90px;
+  margin-left: 60px;
 }
 
-.img_hover_2:hover {
-   background-image: url('../images/Qualidades/drink2_colorfull.png');
-   background-size: cover;
-   height: 90px;
-   width: 90px;
+.img_feature_2 {
+  background-image: url('../images/Qualidades/drink2_colorfull.png');
+  background-size: cover;
+  height: 90px;
+  width: 90px;
+  margin-left: 80px;
 }
 
-.img_hover_3 {
-   background-image: url('../images/Qualidades/bartender_colorless.png');
-   background-size: cover;
-   height: 90px;
-   width: 90px;
-   margin-left: 60px;
+.img_feature_3 {
+  background-image: url('../images/Qualidades/bartender_colorfull.png');
+  background-size: cover;
+  height: 90px;
+  width: 90px;
+  margin-left: 60px;
 }
 
-.img_hover_3:hover {
-   background-image: url('../images/Qualidades/bartender_colorfull.png');
-   background-size: cover;
-   height: 90px;
-   width: 90px;
-}
 /* Terceira Secção */
-#album{
+#album {
   background-color: #dfeeea;
 }
+
 /* Album */
-.album_img_1{
+.album_img_1 {
   background-image: url("../images/Album/drink_moscow_mule_2.jpg");
   height: 225px;
   width: 100%;
@@ -160,7 +174,8 @@ color: #717171;
   background-color: #55595c;
   background-repeat: no-repeat;
 }
-.album_img_2{
+
+.album_img_2 {
   background-image: url("../images/Album/drink_negroni_1.jpg");
   height: 225px;
   width: 100%;
@@ -169,7 +184,8 @@ color: #717171;
   background-color: #55595c;
   background-repeat: no-repeat;
 }
-.album_img_3{
+
+.album_img_3 {
   background-image: url("../images/Album/drink_caipirinha_mo_1.jpg");
   height: 225px;
   width: 100%;
@@ -180,25 +196,26 @@ color: #717171;
 }
 
 /* Quarta Secção */
-#contato{
+#contato {
   background-color: black;
-   /* background-image: linear-gradient(white, #232323); */
- height: 950px;
+  height: 950px;
 }
- /* Contato */
+
+/* Contato */
 .img_div {
-   margin: 150px 1px 30px 40px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-image: url('../images/Contato/bar_people.jpg');
-    background-color: #393e46;
-    background-repeat: no-repeat;
-    height: 450px;
-   max-width: 90%;
+  margin: 150px 1px 30px 40px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/Contato/bar_people.jpg');
+  background-color: #393e46;
+  background-repeat: no-repeat;
+  height: 450px;
+  max-width: 90%;
 }
-.h2_contact{
-font-weight: bold;
+
+.h2_contact {
+  font-weight: bold;
 }
 
 /* footer */
@@ -209,8 +226,9 @@ font-weight: bold;
 .social-icon {
   margin: 20px 10px;
 }
- .link_footer {
-    color: black !important;
-    text-decoration: none !important;
-    cursor:default !important;
+
+.link_footer {
+  color: black !important;
+  text-decoration: none !important;
+  cursor: default !important;
 }
