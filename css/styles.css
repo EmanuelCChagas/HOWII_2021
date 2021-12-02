@@ -136,7 +136,7 @@ Embora suas propriedades serão modificas no index.js, aqui deixei algumas
 salvas para caso o navegador não habilite o javascript
    */
 .img_feature_1 {
-  background-image: url('../images/Qualidades/drink_colorfull.png');
+  background-image: url('.../images/Qualidades/drink_colorfull.png');
   background-size: cover;
   height: 90px;
   width: 90px;
@@ -144,7 +144,7 @@ salvas para caso o navegador não habilite o javascript
 }
 
 .img_feature_2 {
-  background-image: url('../images/Qualidades/drink2_colorfull.png');
+  background-image: url('.../images/Qualidades/drink2_colorfull.png');
   background-size: cover;
   height: 90px;
   width: 90px;
